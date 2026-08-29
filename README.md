@@ -1,75 +1,49 @@
-<!-- profile-readme: taldoshawn -->
+<!-- made to feel like me, not like a template -->
 
 <p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Shawn — monochrome manga profile banner" />
+  <img src="./assets/banner.svg" width="100%" alt="Shawn" />
 </p>
 
-<p align="center">
-  <samp>developer · builder · always refining</samp>
-  <br/>
-  <sub>quiet interfaces, useful projects, disciplined work.</sub>
-</p>
-
-<br/>
-
-<img src="./assets/divider.svg" width="100%" alt="Soli Deo Gloria" />
-
-### `01 / about`
-
-I like taking an idea that exists only in my head and turning it into something **real, usable and intentional**.
-
-My work usually lives somewhere between software, automation and interface design. I care about the details people notice without knowing why: spacing, hierarchy, speed, simplicity and whether the final thing actually feels finished.
+<br>
 
 ```text
-name       Shawn
-focus      building / learning / improving
-style      monochrome · minimal · intentional
-mindset    discipline > motivation
-faith      † Soli Deo Gloria
+$ whoami
+
+Shawn.
+I build things, break them, rebuild them, and keep going until they feel right.
 ```
 
-<br/>
+### `what i'm into`
 
-### `02 / stack`
+web apps / automation / interfaces / AI / weird ideas that turn into real projects
 
-`TypeScript` · `JavaScript` · `Node.js` · `React` · `Next.js` · `HTML` · `CSS`
+I care a lot about the small stuff — spacing, speed, structure, how something feels to use, and whether it actually looks finished.
 
-`Git` · `GitHub` · `Docker` · `Supabase` · `Vercel`
+### `what i use`
 
-<br/>
+`TypeScript` &nbsp; `JavaScript` &nbsp; `Node.js` &nbsp; `React` &nbsp; `Next.js`
 
-### `03 / currently`
+`HTML` &nbsp; `CSS` &nbsp; `Git` &nbsp; `Docker` &nbsp; `Supabase` &nbsp; `Vercel`
+
+### `current state`
 
 ```text
-AI systems       / exploring
-web applications / building
-automation       / experimenting
-UI & UX          / obsessing over the details
+learning        ████████████████████  never stops
+building        █████████████████░░░  always something
+perfectionism   ███████████████████░  probably too much
+sleep           ██████░░░░░░░░░░░░░░  questionable
 ```
 
-<br/>
-
-### `04 / principles`
-
-```text
-01  build until it feels intentional
-02  keep the interface quiet
-03  test, break, rebuild, improve
-04  faith before ego
-```
-
-<br/>
-
 <p align="center">
-  <sub>“Whatever you do, do it all for the glory of God.”</sub>
-  <br/>
-  <sub>1 Corinthians 10:31</sub>
-  <br/><br/>
-  <samp>† &nbsp; SOLI DEO GLORIA &nbsp; †</samp>
+  <img src="./assets/divider.svg" width="100%" alt="manga flowers" />
 </p>
 
-<br/>
-
 <p align="center">
-  <sub>taldoshawn / github</sub>
+  <samp>† soli deo gloria</samp>
+  <br>
+  <sub>“Whatever you do, do it all for the glory of God.” — 1 Corinthians 10:31</sub>
 </p>
+
+<br>
+
+<p align="right"><sub>Shawn / 2026</sub></p>
