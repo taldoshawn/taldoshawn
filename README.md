@@ -1,3 +1,4 @@
+<!-- profile-readme: taldoshawn -->
 <div align="center">
   <img src="./assets/banner.svg" width="100%" alt="Shawn — Code, Discipline, Faith" />
 </div>
