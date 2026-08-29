@@ -1,16 +1,21 @@
 <svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050505"/>
-      <stop offset="0.5" stop-color="#0B0B0D"/>
-      <stop offset="1" stop-color="#020202"/>
+      <stop stop-color="#020202"/>
+      <stop offset="0.52" stop-color="#0B0B0D"/>
+      <stop offset="1" stop-color="#000000"/>
     </linearGradient>
-    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(888 150) rotate(90) scale(150 210)">
-      <stop stop-color="#FFFFFF" stop-opacity="0.12"/>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 160) rotate(90) scale(190 250)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.15"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="360">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
@@ -20,24 +25,32 @@
 
   <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
   <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="23" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" stroke="#FFFFFF" stroke-opacity="0.09"/>
 
-  <circle cx="900" cy="168" r="155" fill="url(#halo)"/>
+  <circle cx="900" cy="168" r="155" fill="url(#halo)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Minimal original anime-inspired silhouette -->
-  <path d="M885 69C845 75 817 100 811 134C803 177 829 200 848 213C838 233 826 252 813 269C851 280 916 282 967 263C949 247 934 227 924 206C949 188 969 161 962 126C953 83 922 64 885 69Z" fill="#111216" stroke="#FFFFFF" stroke-opacity="0.13"/>
-  <path d="M840 127C852 100 876 88 906 91C931 93 948 108 954 129C941 118 927 111 911 109C886 106 864 114 840 127Z" fill="#F5F5F5" fill-opacity="0.10"/>
-  <path d="M854 143C869 132 886 128 903 130" stroke="#F5F5F5" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round"/>
-  <path d="M917 130C929 131 939 135 946 142" stroke="#F5F5F5" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
-  <path d="M850 203C864 213 879 218 895 219C910 219 923 215 936 206" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+  <!-- Original anime-inspired silhouette -->
+  <g>
+    <path d="M885 69C845 75 817 100 811 134C803 177 829 200 848 213C838 233 826 252 813 269C851 280 916 282 967 263C949 247 934 227 924 206C949 188 969 161 962 126C953 83 922 64 885 69Z" fill="#111216" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <path d="M840 127C852 100 876 88 906 91C931 93 948 108 954 129C941 118 927 111 911 109C886 106 864 114 840 127Z" fill="#F5F5F5" fill-opacity="0.10"/>
+    <path d="M854 143C869 132 886 128 903 130" stroke="#F5F5F5" stroke-opacity="0.30" stroke-width="3" stroke-linecap="round"/>
+    <path d="M917 130C929 131 939 135 946 142" stroke="#F5F5F5" stroke-opacity="0.24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M850 203C864 213 879 218 895 219C910 219 923 215 936 206" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="5s" repeatCount="indefinite"/>
+  </g>
 
   <!-- Cross motif -->
-  <g filter="url(#glow)" opacity="0.9">
+  <g filter="url(#glow)">
     <rect x="1011" y="83" width="8" height="86" rx="4" fill="#F4F4F5"/>
     <rect x="984" y="111" width="62" height="8" rx="4" fill="#F4F4F5"/>
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
   </g>
-  <rect x="1075" y="220" width="4" height="42" rx="2" fill="#FFFFFF" fill-opacity="0.22"/>
-  <rect x="1062" y="233" width="30" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.22"/>
+  <g opacity="0.24">
+    <rect x="1075" y="220" width="4" height="42" rx="2" fill="#FFFFFF"/>
+    <rect x="1062" y="233" width="30" height="4" rx="2" fill="#FFFFFF"/>
+  </g>
 
   <!-- Typography -->
   <text x="74" y="132" fill="#FFFFFF" font-size="62" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="6">SHAWN</text>
@@ -45,6 +58,10 @@
   <rect x="78" y="208" width="338" height="1" fill="#FFFFFF" fill-opacity="0.16"/>
   <text x="78" y="252" fill="#E4E4E7" font-size="17" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">BUILD QUIETLY. STAY FAITHFUL.</text>
   <text x="78" y="291" fill="#71717A" font-size="14" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">✝  SOLI DEO GLORIA</text>
+
+  <rect x="0" y="-90" width="1200" height="90" fill="url(#scan)" opacity="0.45">
+    <animate attributeName="y" values="-90;360" dur="6.5s" repeatCount="indefinite"/>
+  </rect>
 
   <circle cx="76" cy="59" r="3" fill="#FFFFFF" fill-opacity="0.55"/>
   <circle cx="92" cy="59" r="3" fill="#FFFFFF" fill-opacity="0.20"/>
